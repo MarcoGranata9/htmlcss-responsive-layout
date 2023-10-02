@@ -36,6 +36,10 @@ body {
     padding: 50px 0;
 }
 
+.bg-violet {
+    background-color: var(--violet);
+}
+
 /* Header */
 header {
     background-color: var(--blue);
@@ -102,17 +106,54 @@ header ul {
 
 /* Planning section */
 
-.planning-s {
-    background-color: var(--violet);
+.planning-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.planning-col {
+    width: 100%;
 }
 
 @media screen and (min-width: 992px) {
-    
-    .planning-row{
-        display: flex;
-    }
-    
     .planning-col {
         width: calc(100% / 2);
     }    
+}
+
+/* Testimonials section */
+
+.testimonial-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.testimonial-col {
+    width: 100%;
+}
+
+/* Benifits section */
+
+.benefits-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.benefits-col {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .benefits-col {
+        width: calc(100% / 2 - 10px / 2);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .benefits-col {
+        width: calc(100% / 3 - 20px / 3);
+    }
 }
