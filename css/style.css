@@ -32,6 +32,10 @@ body {
     margin: 0 auto;    
 }
 
+.section-padding {
+    padding: 50px 0;
+}
+
 /* Header */
 header {
     background-color: var(--blue);
@@ -53,7 +57,7 @@ header ul {
     gap: 1rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     header nav {
         display: block;
     }
@@ -67,4 +71,30 @@ header ul {
         max-width: 1100px;
         margin: 0 auto;
     }
-} 
+}
+
+/* Main */
+
+/* Hero */
+
+.hero-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hero-col {
+    background-color: var(--l-blue);
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-col {
+        width: calc(100% / 3 - 20px / 3);                       
+    }
+
+    .hero-col-l {
+        width: calc(100% / 2);
+        flex-grow: 1;
+    }
+}
