@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;    
 }
 
@@ -83,7 +83,8 @@ header ul {
     gap: 10px;
 }
 
-.hero-col {
+.hero-col,
+.hero-col-l {
     background-color: var(--l-blue);
     width: 100%;
 }
@@ -97,4 +98,21 @@ header ul {
         width: calc(100% / 2);
         flex-grow: 1;
     }
+}
+
+/* Planning section */
+
+.planning-s {
+    background-color: var(--violet);
+}
+
+@media screen and (min-width: 992px) {
+    
+    .planning-row{
+        display: flex;
+    }
+    
+    .planning-col {
+        width: calc(100% / 2);
+    }    
 }
