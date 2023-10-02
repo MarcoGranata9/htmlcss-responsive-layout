@@ -184,3 +184,30 @@ header ul {
     }
 }
 
+/* CTA section */
+
+.cta-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .cta-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cta-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--black);
+}
