@@ -264,6 +264,39 @@ header ul {
 
 .testimonial-col {
     width: 100%;
+    text-align: center;
+    background-color: var(--violet);
+    color: var(--white);
+    border-radius: 20px;
+}
+
+.testimonial-col h4 {
+    font-size: 1.3rem;
+}
+
+.testimonial-col > * {
+    padding: 1rem;
+}
+
+.testimonial-col-text {
+    width: 100%;
+    text-align: center;
+}
+
+.testimonial-col-text > * {
+    padding-bottom: 2rem;
+}
+
+.testimonial-col-text h2 {
+    color: var(--violet);
+    font-size: 2rem;
+}
+
+.testimonial-col  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Benifits section */
@@ -282,6 +315,13 @@ header ul {
     .benefits-col {
         width: calc(100% / 2 - 10px / 2);
     }
+
+    .testimonial-col {
+        display: flex;
+        text-align: left;
+        align-items: center;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
