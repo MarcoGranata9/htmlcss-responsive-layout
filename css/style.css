@@ -45,6 +45,10 @@ a {
     color: inherit;
 }
 
+.margin-b-2-rem {
+    margin-bottom: 2rem;
+}
+
 /* Header */
 header {
     background-color: var(--blue);
@@ -207,10 +211,47 @@ header ul {
     width: 100%;
 }
 
+.planning-col-left {
+    color: var(--white);
+}
+
+.planning-col-left > * {
+    padding-bottom: 3rem;
+}
+
+.planning-col-right {
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.planning-col-right p {
+    font-style: italic;
+}
+
+.planning-col-right > * {
+    padding-bottom: 1rem;
+}
+
+.round-btn {
+    padding: 0.75rem 1rem;
+    border-radius: 50%;
+    background-color: var(--violet);
+}
+
 @media screen and (min-width: 992px) {
     .planning-col {
         width: calc(100% / 2 - 10px / 2);
-    }    
+    }
+    
+    #planning-section .container {
+        width: 50%;
+    }
+
+    .planning-col-right {
+        align-self: flex-end;
+    }
 }
 
 /* Testimonials section */
