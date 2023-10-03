@@ -49,6 +49,10 @@ a {
     margin-bottom: 2rem;
 }
 
+p {
+    line-height: 2rem;
+}
+
 /* Header */
 header {
     background-color: var(--blue);
@@ -104,7 +108,7 @@ header ul {
     }
 
     .container {
-        width: 60%;
+        width: 70%;
         max-width: 1100px;
         margin: 0 auto;
     }
@@ -192,7 +196,7 @@ header ul {
     }
 
     .card-hero-col-txt {
-        width: 50%;
+        width: 60%;
     }
 
     .card-hero-col-img {
@@ -206,7 +210,7 @@ header ul {
 .planning-row{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
 }
 
 .planning-col {
@@ -244,11 +248,11 @@ header ul {
 
 @media screen and (min-width: 992px) {
     .planning-col {
-        width: calc(100% / 2 - 10px / 2);
+        width: calc(100% / 2 - 30px / 2);
     }
     
     #planning-section .container {
-        width: 50%;
+        width: 60%;
     }
 
     .planning-col-right {
@@ -384,7 +388,6 @@ header ul {
 }
 
 .about-col-70 p {
-    line-height: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -400,6 +403,7 @@ header ul {
     color: var(--violet);
     font-weight: bold;
     padding: 2rem 0;
+    line-height: 3rem;
 }
 
 .about-col-30 a {
@@ -435,7 +439,7 @@ header ul {
     }
     
     .about-col-70 {
-        width: 68%;
+        width: 65%;
     }
 
     .about-col-30 {
