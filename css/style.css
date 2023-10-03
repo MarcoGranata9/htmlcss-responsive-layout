@@ -378,6 +378,57 @@ header ul {
     width: 100%;
 }
 
+.about-col-70 h2 {
+    font-size: 3rem;
+    color: var(--violet);
+}
+
+.about-col-70 p {
+    line-height: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-col-30 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-col-30 p {
+    font-size: 2rem;
+    color: var(--violet);
+    font-weight: bold;
+    padding: 2rem 0;
+}
+
+.about-col-30 a {
+    padding: 0.5rem 1rem;
+    background-color: var(--violet);
+    display: inline-block;
+    color: var(--white);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.about-col-30 a i {
+    padding-right: 0.5rem;
+}
+
+.img-relative {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.img-relative i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--violet);
+}
+
+
 @media screen and (min-width: 768px) {
     .about-row {
         justify-content: space-between;
