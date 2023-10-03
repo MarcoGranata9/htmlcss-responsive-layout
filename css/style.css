@@ -11,6 +11,7 @@
     --violet: #9792E4;
     --yellow: #FDC15F;
     --black: #333333;
+    --white: #ffffff;
 }
 
 img {
@@ -40,9 +41,17 @@ body {
     background-color: var(--violet);
 }
 
+a {
+    color: inherit;
+}
+
 /* Header */
 header {
     background-color: var(--blue);
+    color: var(--white);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 
 .header-flex {
@@ -52,6 +61,25 @@ header {
     padding: 15px 0;
 }
 
+.h-btn {
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+    font-size: 2rem;
+}
+
+.white-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: var(--white);
+    color: var(--black);
+    display: inline-block;  
+}
+
+header a {
+    text-decoration: none;
+}
+
 header nav {
     display: none;
 }
@@ -59,6 +87,7 @@ header nav {
 header ul {
     list-style-type: none;
     gap: 1rem;
+    align-items: center;
 }
 
 @media screen and (min-width: 992px) {
@@ -81,6 +110,10 @@ header ul {
 
 /* Hero */
 
+.logo-fix {
+    padding-top: 130px;
+}
+
 .hero-row {
     display: flex;
     flex-wrap: wrap;
@@ -91,6 +124,49 @@ header ul {
 .hero-col-l {
     background-color: var(--l-blue);
     width: 100%;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.hero-col-l{
+    padding-bottom: 0;
+}
+
+.hero-col-l h2 {
+    color: var(--blue);
+    padding-bottom: 2rem;
+
+}
+
+.hero-col-l p {
+    padding-bottom: 2rem;
+}
+
+.hero-col-l img {
+    display: block;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.5rem 2rem;
+    background-color: var(--blue);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.hero-col {
+    text-align: center;
+}
+
+.hero-col > * {
+    padding-bottom: 2rem;
+}
+
+.hero-col h2,
+.hero-col i {
+    color: var(--blue);
 }
 
 @media screen and (min-width: 768px) {
@@ -101,6 +177,21 @@ header ul {
     .hero-col-l {
         width: calc(100% / 2);
         flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero-col-l {
+        display: flex;
+    }
+
+    .card-hero-col-txt {
+        width: 50%;
+    }
+
+    .card-hero-col-img {
+        width: 50%;
+        align-self: flex-end;
     }
 }
 
