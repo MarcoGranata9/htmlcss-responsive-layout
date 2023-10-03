@@ -158,6 +158,8 @@ header ul {
     background-color: var(--blue);
     border-radius: 20px;
     margin-bottom: 2rem;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
 }
 
 .hero-col {
@@ -307,8 +309,42 @@ header ul {
     gap: 10px;
 }
 
+.benefit-title {
+    color: var(--white);
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 2rem;
+}
+
 .benefits-col {
     width: 100%;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.benefits-col h2 {
+    font-size: 3rem;
+    color: var(--violet);
+}
+
+.benefits-col h3 {
+    color: var(--violet);
+}
+
+.benefits-col > * {
+    padding-bottom: 1rem;
+}
+
+.benefits-btn {
+    padding: 0.5rem 2rem;
+    background-color: var(--violet);
+    text-decoration: none;
+    border-radius: 20px;
+    color: var(--white);
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
